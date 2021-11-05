@@ -1,0 +1,62 @@
+\begin{table}[h!]
+	\centering
+	\begin{tabular}{||c c c r | c c ||}
+		\hline
+		\multicolumn{6}{|| c ||}{Sample S1\_100\_61, Perm of porous voxels 571.2 mkDa} \\
+		\hline
+		\multicolumn{4}{|| c |}{GeoDict} & \multicolumn{2}{ c ||}{SCoPeS-SB} \\
+		\hline
+		Tol & Solver & $\bar{K^{eff}}$, $m^2$ & (CPU, s) & Tol & $\bar{K^{eff}}$ $m^2$ (CPU, s) \\ [0.5ex]
+		\hline
+		\hline
+		$ 10^{-1}$ & SimpleFFT &
+  8.63e-17 & (4471) & $ 10^{-6}$ & {3.42e+01} (1210) \\
+		\hline
+		$ 10^{-2}$ & SimpleFFT & 6.08e-17 & (61406) & $ 10^{-7}$ & 5.62e-17 (1522) \\
+		\hline
+		$ 10^{-1}$ & LIR: & 1.22e-16 & (33968) & $ 10^{-8}$ & 5.61e-17 (1898) \\
+		\hline
+		$ 9.95 \cdot 10^{-2}$ & LIR: & 6.38e-17 & (459561) & $ 10^{-9}$ & 5.61e-17 (2390) \\
+		  \hline
+		\hline
+		\hline
+		\multicolumn{6}{|| c ||}{Sample S1\_90\_56, Perm of porous voxels 273.8 mkDa} \\
+		\hline
+		\multicolumn{4}{|| c |}{GeoDict} & \multicolumn{2}{ c ||}{SCoPeS-SB} \\
+		\hline
+		Tol & Solver: & $\bar{K^{eff}}$, $m^2$ & (CPU, s) & Tol & $\bar{K^{eff}}$ $m^2$ (CPU, s) \\ [0.5ex]
+		\hline
+		\hline
+$ 10^{-1}$ & SimpleFFT: & 1.15e-16 & (5357) & $10^{-6}$ & 5.74e-17 (1227) \\
+		\hline
+$ 2\cdot10^{-2}$ & SimpleFFT: & 7.02e-17 & (70690) & $ 10^{-7}$ & 6.37e-17 (1584) \\
+		\hline
+		 & & &
+& $ 10^{-8}$ & {6.26e-17} (1942) \\
+		\hline
+   & & & & $ 10^{-9}$ & 6.26e-17 (2431) \\
+		\hline
+		  \hline
+		\hline
+		\multicolumn{6}{|| c ||}{Sample S1\_80\_50, Perm of porous voxels 113.3 mkDa} \\
+		\hline
+		\multicolumn{4}{|| c |}{GeoDict} & \multicolumn{2}{ c ||}{SCoPeS-SB} \\
+		\hline
+		Tol & Solver: & $\bar{K^{eff}}$, $m^2$ & (CPU, s) & Tol & $\bar{K^{eff}}$ $m^2$ (CPU, s) \\ [0.5ex]
+		\hline
+		\hline
+		$ 10^{-1}$ & SimpleFFT: & 7.96e-17 & 16523 & $ 10^{-6}$ & 6.34e-17 (1292) \\
+		\hline
+		$ 5\cdot10^{-3}$ & SimpleFFT: & 6.42e-17 & 228113 & $ 10^{-7}$ & 5.95e-17 (1628) \\
+		\hline
+		 & &
+& & $ 10^{-8}$ & 5.92e-17 (1991) \\
+  \hline
+		 & & &
+& $ 10^{-9}$ & 5.92e-17 (2393) \\
+		\hline
+		\hline
+	\end{tabular}
+	\caption{Ternary samples S1 with no Stokes connectivity. Permeability in $m^2$ computed with GeoDict (solvers SimpleFFT with \textcolor{red}{xxx} bc and LIR with periodic bc) and with SCoPeS-SB with pressure drop bc. Domain extension in Z direction - 10 inlet, 10 outlet layers, $L=0.0009$ m, nproc=8}
+	\label{table:SCoPeS_S1}
+\end{table}
